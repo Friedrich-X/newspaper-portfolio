@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="date">Location, MM/DD/YYYY</div>
+        <h1>Portfolio Title</h1>
+        <div class="subtitle">A Biographical Review</div>
+    </header>
+
+    <main>
+        <article class="lead-article">
+            <h2>Person's Name</h2>
+            <div class="subtitle">Profession & Position</div>
+            
+            <div class="columns">
+                <div class="column">
+                    <p class="first-letter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                
+                <div class="column">
+                    <h3>Milestones</h3>
+                    <ul class="timeline">
+                        <li><strong>20XX</strong> - Milestone 1 Description</li>
+                        <li><strong>20XX</strong> - Milestone 2 Description</li>
+                        <li><strong>20XX</strong> - Milestone 3 Description</li>
+                        <li><strong>20XX</strong> - Milestone 4 Description</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <section class="projects">
+            <h3>Selected Projects</h3>
+            <div class="project-grid">
+                <div class="project" onclick="openModal('modal1')">
+                    <h4>Project 1 Title</h4>
+                    <p>Brief description of the first project in 1-2 sentences.</p>
+                </div>
+                <div class="project" onclick="openModal('modal2')">
+                    <h4>Project 2 Title</h4>
+                    <p>Brief description of the second project in 1-2 sentences.</p>
+                </div>
+                <div class="project" onclick="openModal('modal3')">
+                    <h4>Project 3 Title</h4>
+                    <p>Brief description of the third project in 1-2 sentences.</p>
+                </div>
+            </div>
+        </section>
+
+        <aside class="quote">
+            "A meaningful quote that reflects the person's philosophy or vision."
+        </aside>
+
+        <section class="contact-section">
+            <h3>Get in Touch</h3>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Introductory text for the contact section. Briefly describe what kind of inquiries you're available for.</p>
+                    <div class="contact-details">
+                        <p><strong>Company:</strong> Company Name</p>
+                        <p><strong>Address:</strong> Street No, ZIP City</p>
+                        <p><strong>Phone:</strong> +XX XXX XXXXXX</p>
+                        <p><strong>Email:</strong> contact@domain.com</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            Contact: contact@domain.com | Phone: +XX XXX XXXXXX
+        </div>
+    </footer>
+
+    <!-- Modal Popups -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <h2>Project 1 Title</h2>
+            <div class="modal-grid">
+                <div class="modal-text">
+                    <p>Detailed description of the first project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4>Project Details:</h4>
+                    <ul>
+                        <li>Detail 1: Value/Description</li>
+                        <li>Detail 2: Value/Description</li>
+                        <li>Detail 3: Value/Description</li>
+                        <li>Detail 4: Value/Description</li>
+                    </ul>
+                    <h4>Special Features:</h4>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <h2>Project 2 Title</h2>
+            <div class="modal-grid">
+                <div class="modal-text">
+                    <p>Detailed description of the second project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4>Project Details:</h4>
+                    <ul>
+                        <li>Detail 1: Value/Description</li>
+                        <li>Detail 2: Value/Description</li>
+                        <li>Detail 3: Value/Description</li>
+                    </ul>
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+            <h2>Project 3 Title</h2>
+            <div class="modal-grid">
+                <div class="modal-text">
+                    <p>Detailed description of the third project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4>Project Details:</h4>
+                    <ul>
+                        <li>Detail 1: Value/Description</li>
+                        <li>Detail 2: Value/Description</li>
+                        <li>Detail 3: Value/Description</li>
+                        <li>Detail 4: Value/Description</li>
+                    </ul>
+                    <h4>Key Elements:</h4>
+                    <ul>
+                        <li>Element 1</li>
+                        <li>Element 2</li>
+                        <li>Element 3</li>
+                        <li>Element 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal JavaScript -->
+    <script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            document.querySelectorAll('.modal').forEach(modal => {
+                modal.style.display = "none";
+            });
+            document.body.style.overflow = "auto";
+        }
+    });
+    </script>
+</body>
+</html> 
